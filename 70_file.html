@@ -1,0 +1,57 @@
+<!-- i #70 HTML form handling -->
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form handling </title>
+</head>
+<body>
+
+    <form action="./70_file.php" method="post">
+<input type="text" name="name" placeholder="enter username ">
+</br> </br>
+
+<input type="text" name="email" placeholder="enter email ">
+</br> </br>
+ 
+<input type="password" name="password" placeholder="enter password ">
+</br> </br>
+
+<input type="checkbox" name="skills[]" value="php"><span>php</span>
+</br> </br>
+
+<input type="checkbox" name="skills[]" value="python"><span>python</span>
+</br> </br><hr>
+
+<input type="checkbox" name="skills[]"  value="css"><span>css</span>
+</br> </br>
+
+<input type="radio"    name="gender" value="male"><span>M2F</span>
+</br> </br>
+
+<input type="radio"    name="gender" value="female"><span>F2M</span>
+</br> </br>
+
+<select name="city">
+    <option >SELECT CITY</option>
+    <option value="M">M</option>
+    <option value="P">P</option>
+    <option value="D">D</option>
+</select>
+</br> </br>
+
+    <textarea name="bio" placeholder="enter bio"></textarea>
+    </br> </br>
+    <button>sign up</button>
+
+     
+
+
+    </form>
+
+</body>
+</html>
+ 

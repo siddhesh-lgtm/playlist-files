@@ -9,16 +9,15 @@
 // print_r($squares);
 // echo "</pre>";
 
-echo readfile("asdf");  
-
+echo readfile("asdf");
 if(isset($_FILES['file'])){
     $file=$_FILES['file']['tmp_name'];
     $myfile=fopen($file,"r") or die("cant read file ");
     echo fread($myfile,filesize($file));
     fclose($myfile);
 }
-
 ?>
+
 
 <form action="" method="post" enctype="multipart/form-data">
     <input type="file" name="file"/>
