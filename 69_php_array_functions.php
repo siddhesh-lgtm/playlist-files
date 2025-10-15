@@ -38,15 +38,17 @@ print_r($users);
 echo "<br><br>";
 print_r(array_keys($user1));
 
+
+echo "<h1> implode here </h1><hr>";
 echo "<br><br><br> <pre>";
 echo implode('/',$users)."<pre>";
 
+
+echo "<h1> explode here </h1><hr>";
 $str= "<br>what,when,where,whose,who,whatever<br>";
 $delimitter=",";
-echo "$str";
-
-print_r(explode($delimitter, $str, $limit=3));
-
+echo " str to explode is: $str <br>";
+print_r(explode($delimitter, $str));
 
 
 $language_array = ["PHP", "JavaScript", "Python", "SQL"];
