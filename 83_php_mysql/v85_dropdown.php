@@ -15,7 +15,7 @@ echo"<option>select name </option>";
 foreach($studentData as $student){
     echo "<option value= ".$student['id'].">".$student['name']."</option>";
 }
-echo"<select>";
+echo "<select>";
 echo "<button>submit</button>";
 
 
